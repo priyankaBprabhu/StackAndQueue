@@ -6,16 +6,29 @@ public class LinkedListImplementations<T>  {
     Node temp;
     public void add(T num) {
         Node node = new Node(num);
-        if (head == null) {
-            head = node;
-            return;
+        Node newNode ;
+        if (head != null ) {
+            newNode = node;
+            newNode.next =head;
         }
-        temp = head;
-        while(temp.next != null) {
-            temp = temp.next;
-        }
-        temp.next = node;
+        head = node;
     }
+
+    public void pop() {
+         head = head.next;
+    }
+
+    public int size() {
+        temp=head;
+        int count = 0;
+        while(temp!=null)
+        {
+            temp=temp.next;
+            count++;
+        }
+        return count;
+    }
+
 
     @Override
     public String toString() {

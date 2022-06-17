@@ -9,6 +9,17 @@ public class StackImplementations<T> implements IList<T>  {
     }
 
     @Override
+    public void pop() {
+       while(list.size() > 0) {
+            peak();
+            list.pop();
+        }
+    }
+    void peak(){
+        System.out.println(list.head.data);
+    }
+
+    @Override
     public String toString() {
         return "StackImplementations{" + list + '}';
     }
