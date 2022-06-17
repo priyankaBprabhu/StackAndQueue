@@ -8,4 +8,8 @@ public class StackImplementations<T> implements IList<T>  {
         list.add(num);
     }
 
+    @Override
+    public String toString() {
+        return "StackImplementations{" + list + '}';
+    }
 }

@@ -17,4 +17,8 @@ public class LinkedListImplementations<T>  {
         temp.next = node;
     }
 
+    @Override
+    public String toString() {
+        return "{"+"head=" + head + " }" ;
+    }
 }
