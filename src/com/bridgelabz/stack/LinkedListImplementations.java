@@ -1,4 +1,4 @@
-package com.bridgelabz.stackandqueue;
+package com.bridgelabz.stack;
 
 
 public class LinkedListImplementations<T>  {

@@ -1,4 +1,4 @@
-package com.bridgelabz.stackandqueue;
+package com.bridgelabz.stack;
 
 
 public class StackImplementations<T> implements IList<T>  {
@@ -16,11 +16,13 @@ public class StackImplementations<T> implements IList<T>  {
         }
     }
     void peak(){
+
         System.out.println(list.top.data);
     }
 
     @Override
     public String toString() {
+
         return "StackImplementations{" + list + '}';
     }
 }

@@ -1,7 +1,6 @@
-package com.bridgelabz.stackandqueue;
+package com.bridgelabz.stack;
 
  public interface IList<T> {
     void push(T num);
     void pop();
-
-}
+ }
