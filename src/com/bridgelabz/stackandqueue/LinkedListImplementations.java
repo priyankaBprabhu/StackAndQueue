@@ -2,28 +2,28 @@ package com.bridgelabz.stackandqueue;
 
 
 public class LinkedListImplementations<T>  {
-    Node head;
+    Node top;
     Node temp;
     public void add(T num) {
         Node node = new Node(num);
         Node newNode ;
-        if (head != null ) {
+        if (top != null ) {
             newNode = node;
-            newNode.next =head;
+            newNode.next =top;
         }
-        head = node;
+        top = node;
     }
 
     public void pop() {
-         head = head.next;
+         top = top.next;
     }
 
     public int size() {
-        temp=head;
+        temp = top;
         int count = 0;
-        while(temp!=null)
+        while(temp != null)
         {
-            temp=temp.next;
+            temp = temp.next;
             count++;
         }
         return count;
@@ -32,6 +32,6 @@ public class LinkedListImplementations<T>  {
 
     @Override
     public String toString() {
-        return "{"+"head=" + head + " }" ;
+        return "{top= " + top + " }" ;
     }
 }

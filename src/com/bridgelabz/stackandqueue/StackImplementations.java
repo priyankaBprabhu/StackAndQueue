@@ -16,7 +16,7 @@ public class StackImplementations<T> implements IList<T>  {
         }
     }
     void peak(){
-        System.out.println(list.head.data);
+        System.out.println(list.top.data);
     }
 
     @Override
